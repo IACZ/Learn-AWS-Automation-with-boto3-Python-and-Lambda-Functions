@@ -1,3 +1,6 @@
+'''
+With client it is possible to work with multiple instances, with request it is an individual approach
+'''
 import boto3
 import sys
 aws_mag_con=boto3.session.Session(profile_name="ec2_developer")
