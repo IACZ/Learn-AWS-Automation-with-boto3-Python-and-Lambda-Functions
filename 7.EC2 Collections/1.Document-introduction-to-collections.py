@@ -5,3 +5,7 @@ f1={"Name": "instance-state-name", "Values":['running','stopped']}
 f2={"Name":"instance-type","Values":['t2.micro']}
 for each in ec2_con_re.instances.filter(Filters=[f1,f2]):
 	print(each)
+	
+	
+#ec2_con_re.instances.all()
+#ec2_con_re.instances.limit(2)
