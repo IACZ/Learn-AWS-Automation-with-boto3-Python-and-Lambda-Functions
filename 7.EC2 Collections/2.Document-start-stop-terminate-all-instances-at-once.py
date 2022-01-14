@@ -25,7 +25,7 @@ print(np_sers_ids)
 print("----------------------------")
 
 
-
+#equivalent with client
 np_sers_ids=[]
 f1={"Name": "tag:Name", "Values":['Non_Prod']}
 for each_item in ec2_con_cli.describe_instances(Filters=[f1])['Reservations']:
