@@ -4,6 +4,20 @@ aws_con=boto3.session.Session(profile_name="ec2_developer")
 ec2_con_re=aws_con.resource(service_name="ec2",region_name="us-east-1")
 ec2_con_cli=aws_con.client(service_name="ec2",region_name="us-east-1")
 '''
+my_insobj  =ec2_con_re.Instance("i-002d4110f1199166f")
+print('starting instance')
+my_ins_od.start()
+while True:
+	my_inst_ob = ec2_con_re.Instnce("i-002d4110f1199166f")
+	print('The current status of sce2 is: ', my_inst_ob.state['Name'])
+	if my_inst_ob.state['Name'] == 'running':
+		break
+	print('waiting to get running status')
+	time.sleep(5)
+print(Now instance is up and running')
+      
+'''
+'''
 my_inst_ob=ec2_con_re.Instance("i-002d4110f1199166f")
 print("Starting given instance....")
 my_inst_ob.start()
